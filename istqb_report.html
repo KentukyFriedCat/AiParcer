@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ISTQB - большой тест: вопросы и ответы</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 30px;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .stats {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.2em;
+            color: #27ae60;
+        }
+        .question-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            padding: 20px;
+            border-left: 5px solid #3498db;
+        }
+        .question-text {
+            font-weight: 600;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        .answers {
+            margin-left: 20px;
+        }
+        .answer-row {
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            margin: 5px 0;
+            border-radius: 6px;
+            background-color: #f8f9fa;
+            border-left: 4px solid transparent;
+        }
+        .answer-row.correct {
+            background-color: #d4edda;
+            border-left-color: #28a745;
+        }
+        .answer-row.incorrect {
+            background-color: #f8d7da;
+            border-left-color: #dc3545;
+        }
+        .answer-text {
+            flex: 1;
+            font-size: 1.05em;
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-left: 15px;
+            white-space: nowrap;
+        }
+        .badge-correct {
+            background-color: #28a745;
+            color: white;
+        }
+        .badge-incorrect {
+            background-color: #dc3545;
+            color: white;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>📋 ISTQB — большой тест: вопросы и ответы</h1>
+    <div class="stats">Всего собрано вопросов: 43</div>
+    
+    <div class="question-card">
+        <div class="question-text">Вопрос 1: Что из перечисленного обычно НЕ включается в отчет об инциденте в ПО?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Имя и/или должность лица, обнаружившего проблему</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Версия тестируемого ПО</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Предложение как пофиксить баг</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Фактический и ожидаемый результаты</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 2: Даны данные о возрасте человека, который должен быть в пределах от 1 до 99. Какие значения являются наиболее подходящими для  анализа граничных значений?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">0, 1, 2, 99</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">1, 99, 100, 98</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">0, 1, 99, 100</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">-1, 0, 1, 99</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 3: Одно из полей в форме содержит текстовое поле, которое принимает буквенно-цифровые значения. Определите правильный эквивалентный класс значения.</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">BOOK</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Book</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Boo01k</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">book</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 4: Что из перечисленного является ОСНОВНОЙ задачей при завершении теста?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Обеспечение надлежащей настройки окружения</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Написание итогового отчета по тестированию</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Оценка необходимости проведения дополнительных тестов</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Завершение и архивирование</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 5: Что из перечисленного не является техникой белого ящика?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Тестирование операторов и покрытие</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Тестирование решений и покрытие</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Покрытие условий</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Анализ граничных значений</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 6: Что такое бета-тестирование?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Тестирование потенциальными клиентами, проводимое на территории разработчиков</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Тестирование потенциальными клиентами на своей стороне</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Тестирование разработчиками продукта на территории клиентов</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Тестирование разработчиками продукта на своей стороне</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 7: Какие дефекты ЧАЩЕ ВСЕГО намного дешевле поправить?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Дефекты удобства использования, найденные пользователями</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Дефекты в редко используемых функциональностях</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Дефекты, обнаруженные на ранней стадии</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Минорные дефекты, найденные пользователями</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 8: Каково ГЛАВНОЕ преимущество разработки тестов на раннем этапе жизненного цикла ПО?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Это дешевле, чем разрабатывать тесты во время фазы тестирования</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Это помогает предотвратить появление дефектов в коде</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Тесты, разработанные на раннем этапе, эффективнее тестов, написанных позже</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Это экономит время во время фазы тестирования, когда все тестировщики заняты</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 9: Какой тип методов проектирования тестов лучше всего характеризует процедуру составления тестовых сценариев на основании спецификации компонента?</div>
+        <div class="answers">
+            
+                <div class="answer-row correct">
+                    <span class="answer-text">Черный ящик</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Белый ящик</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Прозрачный ящик</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Тестирование на основе опыта</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 10: Какой принцип НАИЛУЧШИМ образом подходит под описание, когда тесты проектируются и пишутся третьей стороной?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Исследовательское тестирование</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Независимое тестирование</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Интеграционное тестирование</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Тестирование возможного взаимодействия</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 11: Что из перечисленного является НАИБОЛЕЕ подходящей характеристикой для методов, основанных на спецификации (черный ящик)?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Сценарии могут быть легко автоматизированы</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Сценарии независимы друг от друга</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Сценарии получаются систематически из моделей системы</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Сценарии получаются систематически из предоставленного кода</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 12: Как называется скелетная реализация программного компонента, которая используется для тестирования?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Сценарий использования</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Домен</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Драйвер</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Заглушка</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 13: Что является лучшим определением для полного тестирования?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Вы нашли все баги в программе</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Вы протестировали каждый оператор, ветку и комбинацию веток в программе</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Вы протестировали все комбинации входных данных и предусловий</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Вы уложились в запланированный дедлайн</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 14: Какова общая цель рецензирования, статического анализа и динамического тестирования?</div>
+        <div class="answers">
+            
+                <div class="answer-row correct">
+                    <span class="answer-text">A. Найти дефекты</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">B. Исправить дефекты</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Вариант А и В</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Ничего из перечисленного</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 15: Системное тестирование должно исследовать…</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Только нефункциональные требования, без функциональных</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Только функциональные требования, без нефункциональных</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Нефункциональные и функциональные требования</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Нефункциональные или функциональные требования</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 16: Тестирование контракта и соответствия — это часть…</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Системного тестирования</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Приемочного тестирования</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Интеграционного тестирования</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Дымового тестирования</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 17: Что не является целью тестирования?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Поиск дефектов</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Получение уверенности в уровне качества и предоставление информации</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Предотвращение дефектов</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Дебаг</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 18: Что не является риском проекта?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Ошибки поставщика</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Организационные факторы</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Технические ошибки</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">ПО, подверженное ошибкам</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 19: Что из перечисленного состоит из набора входных значений, предварительных условий выполнения и ожидаемых результатов?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Автоматизированный сценарий тестирования</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Спецификация процедуры тестирования</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Тестовый сценарий</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Тестовые данные</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 20: ______ будет проводиться людьми на стороне клиента.</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Альфа-тестирование</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Тестирование в условиях эксплуатации</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Тестирование производительности</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Системное тестирование</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 21: Что из перечисленного не является техникой черного ящика?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Эквивалентное разбиение</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Таблицы решений</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Диаграммы переходов</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Тестирование решений</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 22: Что не является компонентным тестированием?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Проверка на утечку памяти</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Проверка надежности</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Проверка покрытия ветвей</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Проверка таблицы решений</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 23: Какое тестирование можно выполнять на всех уровнях тестирования?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Системное тестирование</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Эксплуатационное тестирование</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Структурное тестирование</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Интеграционное тестирование</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 24: Что относится к фундаментальному процессу тестирования?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Планирование и управление</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Действия по завершению тестирования</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Анализ и проектирование</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Все перечисленное</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 25: Какие аспекты тестирования помогут установить трассируемость?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Управление конфигурацией и генерация тестовых данных</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Спецификация тестовых сценариев и контроль изменений</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Тестовые условия и спецификация тестовой процедуры</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Анализ влияния и покрытие требований</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 26: Принцип цикломатической сложности, где L — ребра или связи, N — узлы, P — независимые пути, это…</div>
+        <div class="answers">
+            
+                <div class="answer-row correct">
+                    <span class="answer-text">L — N + 2P</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">N — L + 2P</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">L — N + P</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">N — L + P</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 27: PDCA (цикл Деминга) — это…</div>
+        <div class="answers">
+            
+                <div class="answer-row correct">
+                    <span class="answer-text">Plan, Do, Check, Act</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Plan, Do, Correct, Act</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Plan, Debug, Check, Act</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Plan, Do, Check, Accept</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 28: Что не является функциональным тестированием?</div>
+        <div class="answers">
+            
+                <div class="answer-row correct">
+                    <span class="answer-text">Тестирование производительности</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Модульное тестирование</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Регрессионное тестирование</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Тест на работоспособность</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 29: Тестирование, в котором мы заставляем объект теста варьировать рабочие нагрузки для измерения и оценки поведения производительности и способности объекта и теста продолжать функционировать должным образом в рамках этих разных рабочих нагрузок, это…</div>
+        <div class="answers">
+            
+                <div class="answer-row correct">
+                    <span class="answer-text">Нагрузочное тестирование</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Интеграционное тестирование</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Системное тестирование</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Тестирование практичности</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 30: Тестирование, которое направлено на поиск дефектов в интерфейсах и во взаимодействии между интергированными компонентами, это…</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Системный уровень тестирования</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Интеграционный уровень тестирования</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Модульный уровень тестирования</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Компонентное тестирование</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 31: Переключатель выключается, когда температура опускается ниже 18, и включается, когда выше 21. Определите значения эквивалентности, относящиеся к классу, когда температура выше 21.</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">12, 16, 22</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">24, 27, 17</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">22, 23, 24</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">14, 15, 19</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 32: Одно из полей формы содержит текстовое поле, которое принимает числовые значения в диапазоне от 18 до 25. Определите недействительный класс эквивалентности.</div>
+        <div class="answers">
+            
+                <div class="answer-row correct">
+                    <span class="answer-text">17</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">19</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">24</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">21</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 33: Исчерпывающее тестирование — это…</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Непрактично, но возможно</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Практически возможно</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Непрактично и невозможно</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Всегда возможно</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 34: В чем недостаток тестирования черного ящика?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Шансы повторения тестов, которые уже сделаны программистом</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Входные данные для теста должны быть от большого пространства выборки</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Трудно определить все возможные затраты в ограниченном времени тестирования. Поэтому написание тест-кейсов происходит медленно и сложно</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Все перечисленное</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 35: ________ указывает, насколько важно исправить ошибку и когда она должна быть пофикшена.</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Критичность</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Приоритет</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Все вышеперечисленное</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Ничего из вышеперечисленного</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 36: Каков нормальный порядок действий, в котором организовано тестирование ПО?</div>
+        <div class="answers">
+            
+                <div class="answer-row correct">
+                    <span class="answer-text">Модульное, интеграционное, системное, приемочное</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Системное, интеграционное, модульное, приемочное</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Модульное, интеграционное, приемочное, системное</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Ни один из перечисленных</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 37: Метод тестирования, который требует разработки тестовых примеров для демонстрации того, что каждая программная функция работает, называется…</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Тестирование черного ящика</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Тестирование прозрачного ящика</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Тестирование серого ящика</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Тестирование белого ящика</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 38: Какое тестирование может быть проведено для ПО, чтобы получить обратную связь от рынка?</div>
+        <div class="answers">
+            
+                <div class="answer-row correct">
+                    <span class="answer-text">Бета-тестирование</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Тестирование удобства использования</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Альфа-тестирование</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Тестирование готового программного обеспечения</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 39: CAST расшифровывается как…</div>
+        <div class="answers">
+            
+                <div class="answer-row correct">
+                    <span class="answer-text">Computer Aided Software Testing</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Computer Aided Software Tools</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Computer Analysis Software Techniques</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Никак не расшифровывается</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 40: В какой момент процесса разработки ПО может начаться процесс тестирования?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Когда код готов</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Когда проектирование завершено</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">После утверждения требований к программному обеспечению</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Когда первый модуль готов к модульному тестированию</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 41: В каком документе должны быть указаны характеристики, подлежащие проверке, подход, критерии прохождения / отказа элемента и результаты тестирования?</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Спецификация тест-кейса</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Спецификация процедуры тестирования</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Тест-план</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Спецификация проектирования теста</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 42: Поле ввода принимает год рождения между 1900 и 2004 годом. Граничные значения для тестирования этого поля — …</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">0, 1900, 2004, 2005</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">1900, 2004</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">1899, 1900, 2004, 2005</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">1899, 1900, 1901, 2003, 2004, 2005</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question-text">Вопрос 43: Процесс управления дефектами не включает…</div>
+        <div class="answers">
+            
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Предотвращение дефектов</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Фиксацию конечного результата</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row incorrect">
+                    <span class="answer-text">Отчетность для руководства</span>
+                    <span class="badge badge-incorrect">❌ Не верно</span>
+                </div>
+                <div class="answer-row correct">
+                    <span class="answer-text">Ничто из вышеперечисленного</span>
+                    <span class="badge badge-correct">✅ Верно</span>
+                </div>
+        </div>
+    </div>
+    <div class="footer">Сгенерировано автоматически. Дата: 01.03.2026 14:27</div>
+</body>
+</html>
